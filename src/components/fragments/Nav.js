@@ -1,17 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { Button } from "@material-ui/core";
 
 function Nav() {
   return (
     <nav>
-      <ul>
-        <li>
-          <NavLink to="/">Home</NavLink>
-        </li>
-        <li>
-          <NavLink to="/buttons">Buttons</NavLink>
-        </li>
-      </ul>
+      <Button>
+        <NavLink to="/">Home</NavLink>
+      </Button>
+      <Button>
+        <NavLink to="/buttons">Buttons</NavLink>
+      </Button>
     </nav>
   );
 }
