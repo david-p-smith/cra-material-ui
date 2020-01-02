@@ -1,10 +1,13 @@
 import React from "react";
+import { AppBar, Typography, Toolbar } from "@material-ui/core";
 
 function Header() {
   return (
-    <div>
-      <h1>Material UI Playground with CRA</h1>
-    </div>
+    <AppBar position="sticky">
+      <Toolbar>
+        <Typography variant="h2">Material UI Playground with CRA</Typography>
+      </Toolbar>
+    </AppBar>
   );
 }
 

@@ -10,14 +10,12 @@ function App() {
   return (
     <>
       <CssBaseline />
-      <Nav />
       <Header />
-      <div>
-        <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/buttons" component={ButtonsPage} />
-        </Switch>
-      </div>
+      <Nav />
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/buttons" component={ButtonsPage} />
+      </Switch>
     </>
   );
 }
